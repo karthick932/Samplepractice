@@ -1,0 +1,99 @@
+name: Performanceproject
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Performanceproject/src
+        type: javaClasspath
+  - name: 'Compound Tests'
+    resources: 
+  - name: Datasets
+    resources: 
+  - name: 'JMeter Tests'
+    resources: 
+  - name: Locations
+    resources: 
+  - name: Results
+    resources: 
+      - name: Performancetestscript_1707835703424.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1707835703424
+          tags: 
+          testId: A1EECA7EE196A3A0F755B83131356239
+          testName: Performancetestscript
+        dependencies: 
+          - path: /Performanceproject/Results/Performancetestscript_1707835703424_orch!system.mstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707835703424_orch!system.rstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707835703424_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707835703424_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707835704021.executiondlr
+            type: statsSessionAsset
+          - path: /Performanceproject/Tests/Performancetestscript.testsuite
+            type: statsSessionTest
+      - name: Performancetestscript_1707835703424_orch!system.mstats
+      - name: Performancetestscript_1707835703424_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: Performancetestscript_1707835703424_perf!localhost.mstats
+      - name: Performancetestscript_1707835703424_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: Performancetestscript_1707835704021.executiondlr
+      - name: Performancetestscript_1707864129036.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1707864129036
+          tags: 
+          testId: A1EECA7EE196A3A0F755B83131356239
+          testName: Performancetestscript
+        dependencies: 
+          - path: /Performanceproject/Results/Performancetestscript_1707864129036_orch!system.mstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707864129036_orch!system.rstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707864129036_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707864129036_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /Performanceproject/Results/Performancetestscript_1707864129279.executiondlr
+            type: statsSessionAsset
+          - path: /Performanceproject/Tests/Performancetestscript.testsuite
+            type: statsSessionTest
+      - name: Performancetestscript_1707864129036_orch!system.mstats
+      - name: Performancetestscript_1707864129036_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: Performancetestscript_1707864129036_perf!localhost.mstats
+      - name: Performancetestscript_1707864129036_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: Performancetestscript_1707864129279.executiondlr
+  - name: Schedules
+    resources: 
+  - name: Tests
+    resources: 
+      - name: Performancetestscript.recdata
+      - name: Performancetestscript.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /Performanceproject/Tests/Performancetestscript.recdata
+            type: recsessionRecdata
+      - name: Performancetestscript.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.0.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EECA7EE196A3A0F755B83131356239
+        dependencies: 
+          - path: /Performanceproject/Tests/Performancetestscript.recsession
+            type: testRecsession
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: Performancetestscript_Test_A1EECA7EE196A3A0F755B83131356239.java
+            type: com.ibm.rational.test.lt.generatedCode

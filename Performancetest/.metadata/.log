@@ -1,0 +1,220 @@
+!SESSION 2024-02-13 20:13:17.929 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=1.8.0_382-b05
+JRE 1.8.0 Windows 8 amd64-64-Bit Compressed References 20230810_742 (JIT enabled, AOT enabled)
+OpenJ9   - d12d10c9e
+OMR      - e80bff83b
+JCL      - c4d2c2bafb based on jdk8u382-b05
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.rpt.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rpt.product.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-02-13 20:14:11.817
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\karthick_ba'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.ibm.rational.test.lt.server 4 0 2024-02-13 20:14:26.022
+!MESSAGE RPTS1000E Unable to start agent communication because of an error:  DevOps Test Performance is unable to execute a schedule because one of the ports(7080) it uses to communicate with the agents is unavailable. Ensure only one DevOps Test Performance instance is running. DevOps Test Performance will not be able to execute schedules.
+
+!ENTRY com.ibm.rational.test.rtw.webgui.recorder 4 0 2024-02-13 20:17:03.776
+!MESSAGE CRRTWW0022E Exception in starting Chrome browser.
+org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LP1-AP-51685672', ip: '192.168.1.35', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_382'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60c2cc414dd356714ba3c4193e3334b9, executeScript {script=const loadTimer = 1000;/******************************************************************
+* Licensed Materials - Property of IBM and/or HCL 
+* (c) Copyright HCL Technologies Ltd. 2019. All Rights Reserved.
+* 
+* Note to U.S. Government Users Restricted Rights: 
+* Use, duplication or disclosure restricted by GSA ADP Schedule 
+* Contract with IBM Corp. 
+*******************************************************************/
+
+function setTableDisplay(display) {
+	var table = document.getElementById('appTable');
+	table.style.display = display;
+}
+setTableDisplay('none');
+
+function addStyle(str) {
+	var node = document.createElement('style');
+	node.innerHTML = str;
+	document.body.appendChild(node);
+}
+addStyle('\
+	#loader {\
+		border: 3px solid #f3f3f3;\
+		animation: spin 1s linear infinite;\
+		border-top: 3px solid #555;\
+		border-radius: 50%;\
+		width: 30px;\
+		height: 30px;\
+	}\
+	@keyframes spin {\
+		0% { transform: rotate(0deg); }\
+		100% { transform: rotate(360deg); }\
+	}'
+);
+
+function createLoader() {
+	var loader = document.createElement('div');
+	loader.id = 'loader';
+	var cfgApp = document.getElementById('configApp');
+	cfgApp.appendChild(loader);
+}
+createLoader();
+
+function hideLoader() {
+	var loader = document.getElementById('loader');
+	loader.style.display = 'none';
+}
+
+setTimeout(function() {
+		hideLoader();
+		setTableDisplay('inherit');
+	}, loadTimer
+);
+, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.47 (aa23feff6d08..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(manual, http=localhos..., se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60c2cc414dd356714ba3c4193e3334b9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:501)
+	at com.ibm.rational.test.rtw.webgui.client.SelClientDelegate.populateAppList(SelClientDelegate.java:413)
+	at com.ibm.rational.test.rtw.webgui.client.SelChromeClientDelegate.star
+!STACK 0
+java.lang.Throwable: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'style')
+  (Session info: chrome=121.0.6167.161)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LP1-AP-51685672', ip: '192.168.1.35', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_382'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60c2cc414dd356714ba3c4193e3334b9, executeScript {script=const loadTimer = 1000;/******************************************************************
+* Licensed Materials - Property of IBM and/or HCL 
+* (c) Copyright HCL Technologies Ltd. 2019. All Rights Reserved.
+* 
+* Note to U.S. Government Users Restricted Rights: 
+* Use, duplication or disclosure restricted by GSA ADP Schedule 
+* Contract with IBM Corp. 
+*******************************************************************/
+
+function setTableDisplay(display) {
+	var table = document.getElementById('appTable');
+	table.style.display = display;
+}
+setTableDisplay('none');
+
+function addStyle(str) {
+	var node = document.createElement('style');
+	node.innerHTML = str;
+	document.body.appendChild(node);
+}
+addStyle('\
+	#loader {\
+		border: 3px solid #f3f3f3;\
+		animation: spin 1s linear infinite;\
+		border-top: 3px solid #555;\
+		border-radius: 50%;\
+		width: 30px;\
+		height: 30px;\
+	}\
+	@keyframes spin {\
+		0% { transform: rotate(0deg); }\
+		100% { transform: rotate(360deg); }\
+	}'
+);
+
+function createLoader() {
+	var loader = document.createElement('div');
+	loader.id = 'loader';
+	var cfgApp = document.getElementById('configApp');
+	cfgApp.appendChild(loader);
+}
+createLoader();
+
+function hideLoader() {
+	var loader = document.getElementById('loader');
+	loader.style.display = 'none';
+}
+
+setTimeout(function() {
+		hideLoader();
+		setTableDisplay('inherit');
+	}, loadTimer
+);
+, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.47 (aa23feff6d08..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(manual, http=localhos..., se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60c2cc414dd356714ba3c4193e3334b9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:501)
+	at com.ibm.rational.test.rtw.webgui.client.SelClientDelegate.populateAppList(SelClientDelegate.java:413)
+	at com.ibm.rational.test.rtw.webgui.client.SelChromeClientDelegate.startSelClient(SelChromeClientDelegate.java:149)
+	at com.ibm.rational.test.rtw.webgui.client.SelClientDelegate.start(SelClientDelegate.java:91)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.Client.startDelegate(Client.java:103)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.Client.startDecoration(Client.java:278)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.Client.access$13(Client.java:275)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.Client$8.run(Client.java:291)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.ProcessingQueue.run(ProcessingQueue.java:38)
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-02-13 20:17:59.261
+!MESSAGE RPTTI0001 Test generation started at Tue Feb 13 20:17:59 IST 2024 -- input:  Performancetestscript.recsession
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-02-13 20:18:02.636
+!MESSAGE RPTTI0002 Test generation completed at Tue Feb 13 20:18:02 IST 2024 -- output:  Performancetestscript.testsuite
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-02-13 20:18:48.079
+!MESSAGE RPTR0000W ALOHA STOP for null
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-02-13 20:18:48.094
+!MESSAGE RPTR0000W XMLAlohaTypedEventLoader setStatus HISTORY_COMPLETE for null
+
+!ENTRY com.ibm.rational.test.lt.execution 1 0 2024-02-13 20:18:48.763
+!MESSAGE RPTJ1000E Cleaning working directory C:\Users\karthick_ba\AppData\Local\Temp\rpt.Performancetestscript.3451684149250676346
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-02-14 04:12:34.736
+!MESSAGE RPTR0000W ALOHA STOP for null
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-02-14 04:12:34.736
+!MESSAGE RPTR0000W XMLAlohaTypedEventLoader setStatus HISTORY_COMPLETE for null
+
+!ENTRY com.ibm.rational.test.lt.execution 1 0 2024-02-14 04:12:35.469
+!MESSAGE RPTJ1000E Cleaning working directory C:\Users\karthick_ba\AppData\Local\Temp\rpt.Performancetestscript.7040502164365827277
+
+!ENTRY com.hcl.products.test.common.licensing.key 4 0 2024-02-14 04:26:32.385
+!MESSAGE Unable to establish a connection to the license server: https://hclsoftware.compliance.flexnetoperations.com/instances/SBFKNHM1XC2R/request
+!STACK 0
+com.flexnet.lm.FlxException: Unknown Host Exception.
+	at com.flexnet.lm.net.Comm.sendBinaryMessage(SourceFile:211)
+	at com.hcl.products.test.common.licensing.key.FlexLicense.talkToServer(FlexLicense.java:566)
+	at com.hcl.products.test.common.licensing.key.FlexLicense.renewAllFloating(FlexLicense.java:1656)
+	at com.hcl.products.test.common.licensing.key.LicenseHandler$1.run(LicenseHandler.java:151)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)

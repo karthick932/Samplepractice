@@ -1,0 +1,139 @@
+name: UITestproject
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /UITestproject/src
+        type: javaClasspath
+  - name: 'Compound Tests'
+    resources: 
+  - name: Datasets
+    resources: 
+  - name: 'JMeter Tests'
+    resources: 
+  - name: Locations
+    resources: 
+  - name: Results
+    resources: 
+      - name: UItestscript_1707833471201.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1707833471201
+          tags: 
+          testId: A1EECA79A070BAA0F0C1E23530336361
+          testName: UItestscript
+        dependencies: 
+          - path: /UITestproject/Results/UItestscript_1707833471201.xmoebreport
+            type: statsSessionAsset
+          - path: /UITestproject/Results/UItestscript_1707833471201_orch!system.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707833471201_orch!system.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707833471201_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707833471201_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707833472465.executiondlr
+            type: statsSessionAsset
+          - path: /UITestproject/Tests/UItestscript.testsuite
+            type: statsSessionTest
+      - name: UItestscript_1707833471201.xmoebreport
+      - name: UItestscript_1707833471201_orch!system.mstats
+      - name: UItestscript_1707833471201_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707833471201_perf!localhost.mstats
+      - name: UItestscript_1707833471201_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707833472465.executiondlr
+      - name: UItestscript_1707864071340.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1707864071340
+          tags: 
+          testId: A1EECA79A070BAA0F0C1E23530336361
+          testName: UItestscript
+        dependencies: 
+          - path: /UITestproject/Results/UItestscript_1707864071340.xmoebreport
+            type: statsSessionAsset
+          - path: /UITestproject/Results/UItestscript_1707864071340_orch!system.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707864071340_orch!system.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707864071340_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707864071340_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707864072098.executiondlr
+            type: statsSessionAsset
+          - path: /UITestproject/Tests/UItestscript.testsuite
+            type: statsSessionTest
+      - name: UItestscript_1707864071340.xmoebreport
+      - name: UItestscript_1707864071340_orch!system.mstats
+      - name: UItestscript_1707864071340_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707864071340_perf!localhost.mstats
+      - name: UItestscript_1707864071340_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707864072098.executiondlr
+      - name: UItestscript_1707883803111.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1707883803111
+          tags: 
+          testId: A1EECA79A070BAA0F0C1E23530336361
+          testName: UItestscript
+        dependencies: 
+          - path: /UITestproject/Results/UItestscript_1707883803111.xmoebreport
+            type: statsSessionAsset
+          - path: /UITestproject/Results/UItestscript_1707883803111_orch!system.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707883803111_orch!system.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707883803111_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707883803111_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /UITestproject/Results/UItestscript_1707883803791.executiondlr
+            type: statsSessionAsset
+          - path: /UITestproject/Tests/UItestscript.testsuite
+            type: statsSessionTest
+      - name: UItestscript_1707883803111.xmoebreport
+      - name: UItestscript_1707883803111_orch!system.mstats
+      - name: UItestscript_1707883803111_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707883803111_perf!localhost.mstats
+      - name: UItestscript_1707883803111_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UItestscript_1707883803791.executiondlr
+  - name: Schedules
+    resources: 
+  - name: Tests
+    resources: 
+      - name: UItestscript.recdata
+      - name: UItestscript.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /UITestproject/Tests/UItestscript.recdata
+            type: recsessionRecdata
+      - name: UItestscript.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.0.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EECA79A070BAA0F0C1E23530336361
+        dependencies: 
+          - path: /UITestproject/Tests/UItestscript.recsession
+            type: testRecsession
+          - path: /UITestproject/pectran_com_114.ma
+            type: test#moeb.applicationPackage
+  - name: pectran_com_114.ma
+    type: moeb.applicationPackage
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: UItestscript_Test_A1EECA79A070BAA0F0C1E23530336361.java
+            type: com.ibm.rational.test.lt.generatedCode
